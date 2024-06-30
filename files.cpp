@@ -72,38 +72,39 @@ int main()
 
 
 
-    ifstream file("text.txt");
-    if (!file) {
-        O << "Файл не знайдено!" << E;
-        return 1;
-    }
+    //ifstream file("text.txt");
+    //if (!file) {
+    //    O << "Файл не знайдено!" << E;
+    //    return 1;
+    //}
 
-    char txt[20];
-    int rah = 0;
-    string num;
-    bool end = false;
-    while (file) {
-        file.getline(txt, 20);
-        for (int i = 0; txt[i] != '\0'; i++) {
-            if (isdigit(txt[i])) {
-                num += txt[i];
+    //char txt[20];
+    //int rah = 0;
+    //string num;
+    //bool end = false;
+    //while (file) {
+    //    file.getline(txt, 20);
+    //    for (int i = 0; txt[i] != '\0'; i++) {
+    //        if (isdigit(txt[i])) {
+    //            num += txt[i];
 
-                if (!end) {
-                    rah++;
-                    end = true;
-                }
-                else end = false;
-            }
+    //            if (!end) {
+    //                rah++;
+    //                end = true;
+    //            }
+    //            else end = false;
+    //        }
 
-            if (txt[i] == ' ') {
-                cout << num << endl;
-                num = "";
-            }
-        }
-        /*for (char i: txt) {
-            if (txt[i] >= '0' && txt[i] <= '9') cout << txt[i] << endl;
-        }*/
-    }
-    cout << "Кількість чисел " << rah << endl;
-    file.close();
+    //        if (txt[i] == ' ') {
+    //            cout << num << endl;
+    //            num = "";
+    //        }
+    //    }
+    //    /*for (char i: txt) {
+    //        if (txt[i] >= '0' && txt[i] <= '9') cout << txt[i] << endl;
+    //    }*/
+    //}
+    //cout << "Кількість чисел " << rah << endl;
+    //file.close();
+    //ERROR!!!
 }
